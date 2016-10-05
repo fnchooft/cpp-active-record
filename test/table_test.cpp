@@ -1,5 +1,7 @@
 #include "test_helper.h"
+#ifdef HAVE_POSTGRES
 #include <active_record/connection/postgresql.h>
+#endif
 #include <active_record/connection/sqlite3.h>
 
 extern string database_name;
